@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*codico que se genere fontsquare
+@font-face
+*/
+body{
+
+	background: #212121;
+	color: #fff;
+	font-family: Helvetica, Verdana;
+	font-size: 2em;
+}
+/*16px =12pt = 100% = 1em ancho de latra mayuscula M, */
+
+/*para responsive desing unidades relativas*/
+h1 {
+	color: #f60;
+	margin: 0.25em auto;
+	text-align: center;
+	text-shadow:5px 5px 10px rgba(255,255,255,0.5);
+}
+
+header,nav,footer {
+	background: #1E6381;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;/*ancho variable*/
+	padding: 0.25em;
+	text-align: center;
+}
+
+
+
+
+#contenedor{
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0;
+	/*background: #fff;*/
+	text-align: center;
+}
+#principal,aside{
+	background: #1E6381;
+	border-radius: 0.5em;
+	display:inline-block;/*no usar float en responsive design*/ 
+/*se comporta como elemento en linea todo lo demas se comporta como en bloque*/
+	margin: 0.25em auto;
+	max-width: 960px;
+	min-height: 200px;
+	padding: 0.25em;
+	text-align: center;
+	vertical-align: top;
+	width:65%;/*para evitar desbordamientos de padding y margin*/
+
+
+}
+
+/*tiene que considerarse que etiqueta aparece primero en este caso 
+aparece primero article*/
+
+article{
+	background: #011E30;
+	border-radius: 0.5em;
+	min-height: 140px;
+	padding: 0.25em;
+	/*minimos y maximos con medidas abosulatas es decir pixceles*/
+}
+aside{
+	width: 30%; /*mas los 65 dan 95*/
+}
