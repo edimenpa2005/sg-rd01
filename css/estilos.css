@@ -5,37 +5,103 @@
 /*codico que se genere fontsquare
 @font-face
 */
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/roboto-light-webfont.eot');
+    src: url('fonts/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-light-webfont.woff') format('woff'),
+         url('fonts/roboto-light-webfont.ttf') format('truetype'),
+         url('fonts/roboto-light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 body{
 
-	background: #212121;
-	color: #fff;
-	font-family: Helvetica, Verdana;
-	font-size: 2em;
+	background: #fff;
+	background: url(img/fondo.jpg) fixed top center no-repeat;
+	color: #011E30;
+	font-family: 'robotolight',Helvetica,Verdana;
+	font-size: 11pt;
+
 }
 /*16px =12pt = 100% = 1em ancho de latra mayuscula M, */
 
 /*para responsive desing unidades relativas*/
 h1 {
-	color: #f60;
-	margin: 0.25em auto;
-	text-align: center;
-	text-shadow:5px 5px 10px rgba(255,255,255,0.5);
+	color: #CC0000;
+	margin: 0.50em auto;
+
+	text-shadow:5px 5px 10px rgba(0,0,0,0.3);
 }
 
 header,nav,footer {
 	background: #1E6381;
-	border-radius: 0.5em;
-	margin: 0.5em auto;
+	/*border-radius: 0.5em;*/
+	margin: 0.0em auto;
 	max-width: 960px;/*ancho variable*/
-	padding: 0.25em;
+	padding: 0.0em;
 	text-align: center;
 }
 
+nav{
+	margin: 0em auto;
+	min-height: 30px;
+	padding: 0em;
+}
 
+header{
+	background: #fff;
+}
+header #logo,#titulo,#identificacion{
+	background: #fff;
+	min-height: 100px;
+	display: inline-block;
+	vertical-align: top;
+	
+}
 
+#logo{
+	width: 11%;
+	min-width: 100px;
+	text-align: center;
+	background: #fff;
+}
 
+#ilogo{
+	margin-top: 0.75em;
+	
+}	
+#titulo{
+	width: 64%;
+	min-width: 100px;
+	text-align: left;
+}
+#identificacion{
+	width: 24%;
+	min-width: 100px;
+	
+}
+
+#identificacion p{
+	margin-top: 2em;
+	font-size: 0.78em;
+}
+
+#slide{
+background: #1E6381;
+	border-radius: 0.5em;
+	margin: 0.1em auto;
+	max-width: 960px;/*ancho variable*/
+	padding: 0.1em;
+	text-align: center;
+	min-height: 250px;	
+}
 #contenedor{
-	margin: 0.5em auto;
+	margin: 0.1em auto;
 	max-width: 960px;
 	padding: 0;
 	/*background: #fff;*/
@@ -46,13 +112,13 @@ header,nav,footer {
 	border-radius: 0.5em;
 	display:inline-block;/*no usar float en responsive design*/ 
 /*se comporta como elemento en linea todo lo demas se comporta como en bloque*/
-	margin: 0.25em auto;
+	margin: 0.1em auto;
 	max-width: 960px;
 	min-height: 200px;
-	padding: 0.25em;
+	padding: 0.1em;
 	text-align: center;
 	vertical-align: top;
-	width:65%;/*para evitar desbordamientos de padding y margin*/
+	width:68%;/*para evitar desbordamientos de padding y margin*/
 
 
 }
@@ -69,4 +135,8 @@ article{
 }
 aside{
 	width: 30%; /*mas los 65 dan 95*/
+}
+
+footer{
+	min-height: 240px;
 }
