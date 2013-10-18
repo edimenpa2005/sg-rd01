@@ -48,10 +48,50 @@ header,nav,footer {
 }
 
 nav{
+	background: #084B8A;
 	margin: 0em auto;
 	min-height: 30px;
 	padding: 0em;
+	text-align: left;
 }
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display: inline-block;
+	padding: 0.1em;
+	vertical-align: top;
+}
+
+nav a{
+	background: #084B8A;
+	
+	border-radius: 0.25em;
+	color: #fff;
+	display: block;
+	padding: 0.2em;
+	text-decoration: none;
+	transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+nav a:hover{
+	background: #CC0000;
+	
+	border-radius: 0 0.5em 0 0.5em;
+	color: #FFF;
+	transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+}
+
 
 header{
 	background: #fff;

@@ -27,9 +27,9 @@
 </header>
 <nav>
 	<ul>
-		<li>Nuestro Colegio</li>
-		<li>Servicios que ofrecemos</li>
-		<li>Admision</li>
+		<li><a href="#">Nuestro Colegio</a></li>
+		<li><a href="#">Servicios que ofrecemos</a></li>
+		<li><a href="#">Admision</a></li>
 
 	</ul>
 </nav>
